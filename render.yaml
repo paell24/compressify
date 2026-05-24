@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: compressify
+    env: python
+    buildCommand: bash build.sh
+    startCommand: gunicorn app:app
